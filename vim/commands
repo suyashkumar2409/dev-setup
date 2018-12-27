@@ -1,0 +1,7 @@
+# apt-vim - can be used to install various plugins
+curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
+
+# Nerdtree - displays folders inside vim
+apt-vim install -y https://github.com/scrooloose/nerdtree.git
+
+
