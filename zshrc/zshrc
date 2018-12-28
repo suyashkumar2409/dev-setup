@@ -10,11 +10,25 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status user root_indicator background_jobs history time)
+POWERLEVEL9K_DISABLE_RPROMPT=false
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_TIME_BACKGROUND='blue'
+POWERLEVEL9K_USER_BACKGROUND='green'
+# Advanced `user` color customization
+POWERLEVEL9K_USER_DEFAULT_BACKGROUND='blue'
+POWERLEVEL9K_USER_SUDO_BACKGROUND='red'
+POWERLEVEL9K_USER_ROOT_BACKGROUND='yellow'
+# Advanced `vcs` color customization
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='blue'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='yellow'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='green'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='red'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='green'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
