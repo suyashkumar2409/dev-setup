@@ -11,7 +11,7 @@
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status user root_indicator background_jobs history time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status user root_indicator background_jobs history time battery)
 POWERLEVEL9K_DISABLE_RPROMPT=false
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
@@ -48,6 +48,10 @@ POWERLEVEL9K_VCS_SVN_ICON="SVN" #$'\ue268'  or 
 POWERLEVEL9K_VCS_TAG_ICON=$'\uf02c ' #
 POWERLEVEL9K_VCS_UNSTAGED_ICON=$'\uf111 ' # or $'\uf06a'  or $'\uf12a'  or $'\uf071'  or '\u25CF' ●
 POWERLEVEL9K_VCS_UNTRACKED_ICON=$'\uf128 ' # or $'\uf059'  $'\uf29c'  or $'\u00b1' ?
+
+POWERLEVEL9K_BATTERY_FOREGROUND='021'
+POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(darkred orange4 yellow4 yellow4 chartreuse3 green3 green4 darkgreen)
+POWERLEVEL9K_BATTERY_STAGES=($'\u2581 ' $'\u2582 ' $'\u2583 ' $'\u2584 ' $'\u2585 ' $'\u2586 ' $'\u2587 ' $'\u2588 ')
 #POWERLEVEL9K_VCS_CLEAN_FOREGROUND='blue'
 #POWERLEVEL9K_VCS_CLEAN_BACKGROUND='black'
 #POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='yellow'
